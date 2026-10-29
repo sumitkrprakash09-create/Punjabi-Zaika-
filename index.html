@@ -1,1 +1,201 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore delicious Indian food at Punjabi Zaika, a restaurant website demo.">
+    <title>Punjabi Zaika | Authentic Indian Flavours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">Punjabi Zaika</a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#menu" class="nav-button">Explore Menu</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO PUNJABI ZAIKA</p>
+
+            <h1>Real Flavours.<br>Unforgettable Moments.</h1>
+
+            <p>
+                Discover delicious Indian dishes, traditional flavours,
+                and food made to bring people together.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="primary-button">Explore Our Menu</a>
+                <a href="#about" class="secondary-button">About Us</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80"
+                alt="Indian cuisine served in a bowl">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-heading">
+            <p class="subtitle">OUR STORY</p>
+            <h2>A Taste of Tradition</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                At Punjabi Zaika, we celebrate the richness of Indian
+                cuisine. Our menu brings together comforting classics,
+                delicious vegetarian dishes, and refreshing drinks.
+            </p>
+
+            <p>
+                From creamy curries to freshly prepared Indian breads,
+                there is something for everyone to enjoy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-heading">
+            <p class="subtitle">FRESHLY PREPARED</p>
+            <h2>Our Popular Dishes</h2>
+            <p>Explore the flavours you'll love.</p>
+        </div>
+
+        <!-- JavaScript adds the nine menu cards here -->
+        <div class="menu-grid" id="menu-grid"></div>
+
+        <!-- Shopping Cart -->
+        <div class="cart-box" id="cart">
+            <h2>Your Cart 🛒</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+            <button
+                id="clear-cart"
+                class="add-button"
+                type="button">
+                Clear Cart
+            </button>
+        </div>
+    </section>
+
+    <!-- Customer Order Form -->
+    <section class="order-section" id="order">
+        <div class="section-heading">
+            <p class="subtitle">PLACE YOUR ORDER</p>
+            <h2>Order Your Favourite Food</h2>
+            <p>Enter your details to prepare a demo order.</p>
+        </div>
+
+        <form id="order-form" class="order-form">
+
+            <label for="customer-name">Full Name</label>
+            <input
+                type="text"
+                id="customer-name"
+                name="customer-name"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="customer-phone">Phone Number</label>
+            <input
+                type="tel"
+                id="customer-phone"
+                name="customer-phone"
+                placeholder="Enter your 10-digit phone number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required>
+
+            <label for="customer-address">Delivery Address</label>
+            <textarea
+                id="customer-address"
+                name="customer-address"
+                placeholder="Enter your delivery address"
+                rows="4"
+                required></textarea>
+
+            <p class="order-total">
+                Order Total: ₹<span id="order-total">0</span>
+            </p>
+
+            <button type="submit" class="add-button">
+                Place Demo Order
+            </button>
+
+            <p id="order-message" role="status"></p>
+
+            <p class="demo-notice">
+                This is a demonstration website. Orders are not sent
+                to a real restaurant.
+            </p>
+
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-heading">
+            <p class="subtitle">GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you.</p>
+        </div>
+
+        <div class="contact-content">
+            <p><strong>Restaurant:</strong> Punjabi Zaika</p>
+            <p><strong>Location:</strong> Phagwara, Punjab</p>
+            <p><strong>Phone:</strong> Demo contact information</p>
+            <p>
+                <strong>Note:</strong> This is a student demonstration
+                project, not an official restaurant website.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <h3>Punjabi Zaika</h3>
+
+    <p>Bringing Indian flavours to your table.</p>
+
+    <p>
+        &copy; 2026 Punjabi Zaika. Student demonstration project.
+    </p>
+</footer>
+
+<!-- Keep this script at the end so the HTML loads first -->
+<script src="script.js"></script>
+```
+
+</body>
+</html>
